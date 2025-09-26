@@ -1,5 +1,7 @@
-krc
+KRCLib
 ===
+
+[![GitHub license](https://img.shields.io/github/license/emako/KRCLib)](https://github.com/emako/KRCLib/blob/master/LICENSE) [![NuGet](https://img.shields.io/nuget/v/KRCLib.svg)](https://nuget.org/packages/KRCLib) [![Actions](https://github.com/emako/KRCLib/actions/workflows/library.nuget.yml/badge.svg)](https://github.com/emako/KRCLib/actions/workflows/library.nuget.yml)
 
 KRC file format parse
 
