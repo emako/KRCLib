@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<TargetFrameworks>net461;net472;net48;netstandard2.0;netstandard2.1;net5.0;net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
 		<LangVersion>preview</LangVersion>
 		<RootNamespace>KRC.KRCLib</RootNamespace>
@@ -15,10 +16,14 @@
 		<Trademark></Trademark>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
 		<FileVersion>1.0.0.0</FileVersion>
+		<PackageIcon>Logo.png</PackageIcon>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Include="..\README.md" />
+		<None Include="..\LICENSE" Pack="true" PackagePath="" />
+		<None Include="..\Logo.png" Pack="true" PackagePath="" />
+		<None Include="..\README.md" Pack="true" PackagePath="" />
 	</ItemGroup>
 
 	<ItemGroup>
