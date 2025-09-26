@@ -111,6 +111,35 @@ public static class KRCFile
         return p.Replace("\0", "");
     }
 
+    /// <summary>
+    /// 解码流
+    /// </summary>
+    /// <param name="inputStream"></param>
+    /// <returns></returns>
+    public static string DecodeStreamToString(Stream inputStream)
+    {
+        var headBytes = new byte[4];
+        byte[] encodedBytes;
+        byte[] zipedBytes;
+
+        // 读文件头标记
+        _ = inputStream.Read(headBytes, 0, headBytes.Length);
+
+        // 读XOR加密的内容
+        encodedBytes = new byte[inputStream.Length - headBytes.Length];
+        _ = inputStream.Read(encodedBytes, 0, encodedBytes.Length);
+
+        zipedBytes = new byte[encodedBytes.Length];
+        for (var i = 0; i < encodedBytes.Length; i++)
+        {
+            zipedBytes[i] = (byte)(encodedBytes[i] ^ KRCFileXorKey[i % 16]);
+        }
+
+        var unzipedBytes = Decompress(zipedBytes);
+        var text = RemoveBom(Encoding.UTF8.GetString(unzipedBytes));
+        return text;
+    }
+
     #region 压缩 解压缩
 
     private static byte[] Compress(byte[] pBytes)

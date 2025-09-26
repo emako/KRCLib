@@ -221,6 +221,17 @@ public class KRCLyrics
     }
 
     /// <summary>
+    /// 从流加载
+    /// </summary>
+    /// <param name="inputStream"></param>
+    /// <returns></returns>
+    public static KRCLyrics LoadFromStream(Stream inputStream)
+    {
+        var str = KRCFile.DecodeStreamToString(inputStream);
+        return LoadFromString(str);
+    }
+
+    /// <summary>
     /// 从文本加载
     /// </summary>
     /// <param name="krcstring"></param>
