@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Text.RegularExpressions;
 
-namespace KRC.KRCLib;
+namespace KRCLib;
 
 /// <summary>
 /// KRC文件行字符

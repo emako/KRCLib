@@ -4,7 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace KRC.KRCLib;
+namespace KRCLib;
 
 public static class KRCFile
 {

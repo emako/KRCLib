@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text.RegularExpressions;
 
-namespace KRC.KRCLib;
+namespace KRCLib;
 
 /// <summary>
 /// KRC文件行

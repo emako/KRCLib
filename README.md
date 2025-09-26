@@ -10,7 +10,7 @@ KRC file format parse
 ## 示例 Example
 
 ```csharp
-using KRC.KRCLib;
+using KRCLib;
 using System;
 
 class Program

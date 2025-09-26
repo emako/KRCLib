@@ -1,4 +1,4 @@
-﻿using KRC.KRCLib;
+﻿using KRCLib;
 using System;
 
 namespace KRC.Test;

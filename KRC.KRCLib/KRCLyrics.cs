@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace KRC.KRCLib;
+namespace KRCLib;
 
 /// <summary>
 /// KRC歌词文件
