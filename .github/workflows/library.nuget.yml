@@ -26,7 +26,7 @@ jobs:
         run: dotnet build --configuration Release --no-restore
 
       - name: Pack
-        run: dotnet pack src\KRC.KRCLib\KRC.KRCLib.csproj -c Release --no-build -o out
+        run: dotnet pack KRC.KRCLib\KRC.KRCLib.csproj -c Release --no-build -o out
 
       - name: Push NuGet package
         # run:  dotnet nuget push "out\*.nupkg" -k ${{secrets.NUGET_AUTH_TOKEN}} --source https://api.nuget.org/v3/index.json
