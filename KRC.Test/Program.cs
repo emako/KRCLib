@@ -9,6 +9,7 @@ internal class Program
     {
         KRCLyrics krc = KRCLyrics.LoadFromFile("test.krc");
         Console.WriteLine("解码 [{0}] 完毕。", "test.krc");
+        Console.WriteLine(krc.SaveToString());
         krc.SaveToFile("test_out.krc");
         Console.WriteLine("另存为 [{0}] 完毕。", "test_out.krc");
         Console.ReadLine();

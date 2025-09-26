@@ -109,6 +109,11 @@ public class KRCLyrics
         LoadLines();
     }
 
+    public override string ToString()
+    {
+        return SaveToString();
+    }
+
     /// <summary>
     /// 加载KRC属性
     /// </summary>
@@ -142,10 +147,9 @@ public class KRCLyrics
     }
 
     /// <summary>
-    /// 保存到文件
+    /// 保存KRC为字符串
     /// </summary>
-    /// <param name="outputFilePath"></param>
-    public void SaveToFile(string outputFilePath)
+    public string SaveToString()
     {
         var sb = new StringBuilder();
         sb.AppendLine(string.Format("[id:{0}]", ID));
@@ -190,7 +194,16 @@ public class KRCLyrics
             sb.AppendLine(line.KRCLineString);
         }
 
-        var bytes = KRCFile.EncodeStringToBytes(sb.ToString());
+        return sb.ToString();
+    }
+
+    /// <summary>
+    /// 保存到文件
+    /// </summary>
+    /// <param name="outputFilePath"></param>
+    public void SaveToFile(string outputFilePath)
+    {
+        var bytes = KRCFile.EncodeStringToBytes(SaveToString());
 
         File.WriteAllBytes(outputFilePath, bytes);
     }
