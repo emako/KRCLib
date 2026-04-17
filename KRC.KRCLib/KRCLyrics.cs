@@ -89,8 +89,8 @@ public class KRCLyrics
             new Tuple<Regex, Action<string>>(new Regex("\\[by:[^\\n]+\\n"), (s) => { By = s; }),
             new Tuple<Regex, Action<string>>(new Regex("\\[total:[^\\n]+\\n"), (s) =>
             {
-				// Total = TimeSpan.FromMilliseconds(double.Parse(s));
-			}),
+                // Total = TimeSpan.FromMilliseconds(double.Parse(s));
+            }),
             new Tuple<Regex, Action<string>>(new Regex("\\[offset:[^\\n]+\\n"), (s) =>
             {
                 Offset = TimeSpan.FromMilliseconds(double.Parse(s));

@@ -1,41 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
-	<PropertyGroup>
-		<TargetFrameworks>net461;net472;net48;netstandard2.0;netstandard2.1;net5.0;net6.0;net7.0;net8.0;net9.0</TargetFrameworks>
-		<LangVersion>preview</LangVersion>
-		<RootNamespace>KRCLib</RootNamespace>
-		<AssemblyName>KRCLib</AssemblyName>
-		<OutputType>Library</OutputType>
-		<GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
-		<Title>KRCLib</Title>
-		<Description></Description>
-		<Configuration></Configuration>
-		<PackageId>KRCLib</PackageId>
-		<Product>KRCLib</Product>
-		<Copyright>Copyright © 2011</Copyright>
-		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-		<DebugType>portable</DebugType>
-		<DebugSymbols>true</DebugSymbols>
-		<AllowedOutputExtensionsInPackageBuildOutputFolder>.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-		<IncludeSymbols>true</IncludeSymbols>
-		<EnableWindowsTargeting>true</EnableWindowsTargeting>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
-		<AssemblyVersion>1.0.0.0</AssemblyVersion>
-		<FileVersion>1.0.0.0</FileVersion>
-		<PackageIcon>Logo.png</PackageIcon>
-		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-	</PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net461;net472;net48;netstandard2.0;netstandard2.1;net5.0;net6.0;net7.0;net8.0;net9.0;net10.0</TargetFrameworks>
+        <LangVersion>preview</LangVersion>
+        <RootNamespace>KRCLib</RootNamespace>
+        <AssemblyName>KRCLib</AssemblyName>
+        <OutputType>Library</OutputType>
+        <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
+        <Title>KRCLib</Title>
+        <Description></Description>
+        <Configuration></Configuration>
+        <PackageId>KRCLib</PackageId>
+        <Product>KRCLib</Product>
+        <Copyright>Copyright © 2011</Copyright>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <DebugType>portable</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+        <IncludeSymbols>true</IncludeSymbols>
+        <EnableWindowsTargeting>true</EnableWindowsTargeting>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <AssemblyVersion>1.0.1.0</AssemblyVersion>
+        <FileVersion>1.0.1.0</FileVersion>
+        <Version>1.0.1.0</Version>
+        <PackageIcon>Logo.png</PackageIcon>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    </PropertyGroup>
 
-	<ItemGroup>
-		<None Include="..\LICENSE" Pack="true" PackagePath="" />
-		<None Include="..\Logo.png" Pack="true" PackagePath="" />
-		<None Include="..\README.md" Pack="true" PackagePath="" />
-	</ItemGroup>
+    <ItemGroup>
+        <None Include="..\LICENSE" Pack="true" PackagePath="" />
+        <None Include="..\Logo.png" Pack="true" PackagePath="" />
+        <None Include="..\README.md" Pack="true" PackagePath="" />
+    </ItemGroup>
 
-	<ItemGroup>
-		<PackageReference Include="SharpZipLib" Version="1.4.2" />
-	</ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="SharpZipLib" Version="1.4.2" />
+    </ItemGroup>
 
 </Project>
