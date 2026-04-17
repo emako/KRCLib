@@ -16,7 +16,8 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <DebugType>portable</DebugType>
         <DebugSymbols>true</DebugSymbols>
-        <AllowedOutputExtensionsInPackageBuildOutputFolder>.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+        <RepositoryUrl>https://github.com/emako/KRCLib</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/emako/KRCLib</PackageProjectUrl>
         <IncludeSymbols>true</IncludeSymbols>
         <EnableWindowsTargeting>true</EnableWindowsTargeting>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
