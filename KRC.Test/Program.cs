@@ -34,7 +34,18 @@ internal class Program
             Console.WriteLine(krc.SaveToAss());
             krc.SaveToAssFile("test_out.ass");
             Console.WriteLine("另存为 [{0}] 完毕。", "test_out.ass");
-            Console.ReadLine();
         }
+
+        // --- KRC转SSA ---
+
+        {
+            KRCLyrics krc = KRCLyrics.LoadFromFile("test.krc");
+            Console.WriteLine("转换 [{0}] 为SSA格式：", "test.krc");
+            Console.WriteLine(krc.SaveToSsa());
+            krc.SaveToSsaFile("test_out.ssa");
+            Console.WriteLine("另存为 [{0}] 完毕。", "test_out.ssa");
+        }
+
+        Console.ReadLine();
     }
 }
