@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="KRC.KRCLib/KRC.KRCLib.csproj" />
+  <Project Path="KRC.Test/KRC.Test.csproj" />
+</Solution>
